@@ -1,0 +1,7 @@
+{
+  "name": "ElSafe",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

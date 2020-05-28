@@ -4,20 +4,17 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
-import { TabsPageRoutingModule } from './tabs-routing.module';
+import { EventModalPageRoutingModule } from './event-modal-routing.module';
 
-import { TabsPage } from './tabs.page';
-
-import { NgCalendarModule } from 'ionic2-calendar';
+import { EventModalPage } from './event-modal.page';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    TabsPageRoutingModule,
-    NgCalendarModule
+    EventModalPageRoutingModule
   ],
-  declarations: [TabsPage]
+  declarations: [EventModalPage]
 })
-export class TabsPageModule {}
+export class EventModalPageModule {}

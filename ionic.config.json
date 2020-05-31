@@ -1,7 +1,9 @@
 {
   "name": "ElSafe",
   "integrations": {
-    "capacitor": {}
+    "capacitor": {},
+    "cordova": {}
   },
-  "type": "angular"
+  "type": "angular",
+  "id": "56e8be6a"
 }

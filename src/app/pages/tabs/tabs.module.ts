@@ -17,6 +17,7 @@ import { NgCalendarModule } from 'ionic2-calendar';
     IonicModule,
     TabsPageRoutingModule,
     NgCalendarModule
+
   ],
   declarations: [TabsPage]
 })

@@ -14,16 +14,44 @@
 
   <link rel="icon" type="image/png" href="assets/icon/favicon.png" />
 
-  <link rel="stylesheet" href="build/angular-calendar.css">
-  <link rel="stylesheet" href="build/angular-calendar-week-hours-view.scss">
+  <link href="build/angular-calendar.css">
+  <link  href="build/angular-calendar-week-hours-view.scss">
 
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+
+
+
+
 </head>
 
 <body>
+
   <app-root></app-root>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.14.6/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyDoYyvJnecvkMZxEQUJPzO2O__4n2IJOLA",
+    authDomain: "elsafe-ca2e5.firebaseapp.com",
+    databaseURL: "https://elsafe-ca2e5.firebaseio.com",
+    projectId: "elsafe-ca2e5",
+    storageBucket: "elsafe-ca2e5.appspot.com",
+    messagingSenderId: "231702022684",
+    appId: "1:231702022684:web:99248f74bb65709f7f6dd9",
+    measurementId: "G-3TGSF0ZXG1"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
 </body>
 
 </html>

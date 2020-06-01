@@ -12,9 +12,10 @@ export class FirebaseService {
     addUser(value){
       return new Promise<any>((resolve, reject) => {
         this.afs.collection('/users').add({
-          name: value.name,
+          firstname: value.firstname,
           surname: value.surname,
-          age: parseInt(value.age)
+          email: value.email,
+          DOB: value.birthday,
         })
         .then(
           (res) => {

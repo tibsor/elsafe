@@ -9,19 +9,24 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 
 import { NgCalendarModule } from 'ionic2-calendar';
+import { CalendarPage } from './pages/calendar/calendar.page';
+
 
 import { HttpModule } from '@angular/http';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFireAuthModule } from '@angular/fire/auth';
 import { environment } from '../environments/environment';
-import { AngularFireDatabaseModule } from "@angular/fire/database"
+import { AngularFirestoreModule } from "@angular/fire/firestore"
 
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        CalendarPage
          ],
-  entryComponents: [],
+  entryComponents: [
+    AppComponent, CalendarPage,
+  ],
   imports: [BrowserModule, 
     IonicModule.forRoot(),
    AppRoutingModule,
@@ -29,7 +34,7 @@ import { AngularFireDatabaseModule } from "@angular/fire/database"
   AngularFireAuthModule,
     AngularFireModule.initializeApp(environment.firebase),
     HttpModule,
-    AngularFireDatabaseModule
+    AngularFirestoreModule
     ],
   providers: [
     StatusBar,

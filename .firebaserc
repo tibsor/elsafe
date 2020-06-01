@@ -1,5 +1,14 @@
 {
   "projects": {
     "default": "elsafe-ca2e5"
+  },
+  "targets": {
+    "elsafe-ca2e5": {
+      "hosting": {
+        "app": [
+          "elsafe-ca2e5"
+        ]
+      }
+    }
   }
 }
